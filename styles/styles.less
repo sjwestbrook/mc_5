@@ -3,7 +3,7 @@
 @main: #34314c;
 @secondary: #9592ad;
 @border: #d9ee9;
-
+@white: #ffffff;
 @highlight_1: #fd7473;   // red
 @highlight_2: #fec951;   // yellow
 @highlight_3: #47b8e0;   // blue
@@ -85,6 +85,80 @@ body {
     }
   }
 }
+
+.nav {
+  float: right;
+  padding-top: 1.75em;
+  a {
+    color: @secondary;
+    margin-left: 1em;
+    text-decoration: none;
+  }
+  .current {
+    font-weight: 700;
+    color: @main;
+  }
+}
+
+
+
+/* ---------------------- TIMELINE STYLES ---------------------- */
+
+#timeline {
+  width: 100%; 
+  position: relative;
+  list-style: none;
+  padding: 0;
+  a {
+    text-decoration: none;
+  }
+  .listing {
+    background-color: @white;
+    border: 1px solid @border;
+    border-radius: .3em;
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative;
+    z-index: 1;
+    display: table;  /* each of the items inside of here are going to act as table cells; can vertically align in the middle */
+    width: 100%;
+    img, .info, .job_type {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: .9em;
+      color: @secondary;
+    }
+    .img_wrapper {
+      width: 60px;
+      img {
+        width: 60px;
+        display: block;
+        margin: 0 auto;
+        border-radius: .25em;
+      } 
+    }
+    .info {
+      line-height: 1.25;
+      width: 640px;
+      padding-left: 25px;
+      .job_title {
+        font-weight: 700;
+        color: @main;
+        font-size: 1.5em;
+      }
+      .job_info {
+        color: @secondary;
+        display: block;
+        span {
+          margin: 0 .75em; 
+        }
+      }
+    }
+  }
+}
+
+
+
 
 
 
