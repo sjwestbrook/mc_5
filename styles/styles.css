@@ -80,6 +80,7 @@ body {
   display: table;
   /* each of the items inside of here are going to act as table cells; can vertically align in the middle */
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 #timeline .listing img,
 #timeline .listing .info,
@@ -161,4 +162,7 @@ body {
 #timeline .listing .contract:before {
   background: #9f68d0;
 }
-/* ---------------------- MEDIA QUERIES ---------------------- */
+#timeline .listing:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.1);
+}
