@@ -66,6 +66,17 @@ body {
   list-style: none;
   padding: 0;
 }
+#timeline:after {
+  /* grey timeline line */
+  content: " ";
+  width: 1px;
+  background: 1px #d3d3d3;
+  height: 90%;
+  position: absolute;
+  top: 3em;
+  left: 3em;
+  z-index: 0;
+}
 #timeline a {
   text-decoration: none;
 }
