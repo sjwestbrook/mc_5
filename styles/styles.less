@@ -16,19 +16,75 @@ body {
   font-family: "Open Sans", sans-serif; 
 }
 
+.wrapper {
+  width: 750px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
 
 
-/* ---------------------- X STYLES ---------------------- */
+
+
+/* ---------------------- BORDER STYLES ---------------------- */
+
+.border {
+  height: 6px;
+  border: 0;
+  background-color: @highlight_1;
+  background-image: 
+    linear-gradient(
+        to right,
+        @highlight_1,
+        @highlight_1 25%,
+        @highlight_2 25%,
+        @highlight_2 50%,
+        @highlight_3 50%,
+        @highlight_3 75%,
+        @highlight_4 75%,
+        @highlight_4 100%,
+        @highlight_4 100%
+       );
+  -webkit-background-size: 50% 100%;
+  -moz-background-size: 50% 100%;
+  background-size: 50% 100%;  
+}
 
 
 
 
 
+/* ---------------------- HEADER STYLES ---------------------- */
 
+.main_header {
+  margin: 5em 0 3em 0;
+}
 
-/* ---------------------- X STYLES ---------------------- */
-
-
+.logo {
+  img {
+    width: 75px;
+    float: left;
+  }
+  h1 {
+    float: left;
+    margin: 0 0 0 1em;
+    text-transform: uppercase;
+    font-size: 1.35em;
+    padding-top: 1.1em;
+    color: @main;
+    span {
+      font-weight: 400; 
+    }
+  }
+}
 
 
 
