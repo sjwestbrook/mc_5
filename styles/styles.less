@@ -110,6 +110,16 @@ body {
   position: relative;
   list-style: none;
   padding: 0;
+  &:after {         /* grey timeline line */
+    content: " ";
+    width: 1px;
+    background: 1px @border;
+    height: 90%;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    z-index: 0;
+  }
   a {
     text-decoration: none;
   }
