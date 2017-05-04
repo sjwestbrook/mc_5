@@ -154,6 +154,25 @@ body {
         }
       }
     }
+    .job_type {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: .75em;
+      position: relative;
+      white-space: nowrap;  /*  so it won't break */
+      padding-top: .6em;
+      width: 100px;
+      &:before {    /* this is the bullet in front of the job type */
+        content: " " ;
+        background-color: @highlight_1;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        position: absolute;  /* absolute relative to the job type */
+        left: -20px;
+        top: 27px;
+      }
+    }
   }
 }
 
