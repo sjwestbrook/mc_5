@@ -88,10 +88,10 @@ body {
   font-size: .9em;
   color: #9592ad;
 }
-#timeline .listing .img_wrapper {
+#timeline .listing .image_wrapper {
   width: 60px;
 }
-#timeline .listing .img_wrapper img {
+#timeline .listing .image_wrapper img {
   width: 60px;
   display: block;
   margin: 0 auto;
