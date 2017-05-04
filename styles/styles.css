@@ -2,6 +2,7 @@
 /* ---------------------- GLOBAL STYLES ---------------------- */
 body {
   font-family: "Open Sans", sans-serif;
+  margin: 0;
 }
 .wrapper {
   width: 750px;
@@ -135,5 +136,29 @@ body {
   /* absolute relative to the job type */
   left: -20px;
   top: 27px;
+}
+#timeline .listing .full_time {
+  color: #fd7473;
+}
+#timeline .listing .full_time:before {
+  background: #fd7473;
+}
+#timeline .listing .part_time {
+  color: #fec951;
+}
+#timeline .listing .part_time:before {
+  background: #fec951;
+}
+#timeline .listing .freelance {
+  color: #47b8e0;
+}
+#timeline .listing .freelance:before {
+  background: #47b8e0;
+}
+#timeline .listing .contract {
+  color: #9f68d0;
+}
+#timeline .listing .contract:before {
+  background: #9f68d0;
 }
 /* ---------------------- MEDIA QUERIES ---------------------- */
